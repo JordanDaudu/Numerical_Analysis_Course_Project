@@ -1,4 +1,5 @@
 from math import log
+from colors import bcolors
 # 1.Defect prediction based on LOC
 def defect_prediction(x, y, LOC):
     return x + y * LOC

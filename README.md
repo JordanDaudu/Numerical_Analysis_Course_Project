@@ -1,4 +1,5 @@
 # Numerical Analysis Course Project
+<img align="middle" alt="IMAGE" src="Photos/numerical analysis.jpg"/>
 
 This repository contains the final project for a numerical analysis course, which covers various numerical methods implemented in Python. The project leverages formulas and concepts discussed in the paper _A Critique of Software Defect Prediction Models_ by Norman E. Fenton and Martin Neil, specifically focusing on prediction using size and complexity metrics.
 

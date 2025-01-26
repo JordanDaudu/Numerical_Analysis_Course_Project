@@ -14,7 +14,7 @@ def lipow_defect_prediction(A0, A1, A2, LOC):
 
 # 4.Gaffney's Model for Optimal Module Size
 def gaffney_defect_prediction(a, b, LOC):
-    return a + b * (LOC ** 4/3)
+    return a + b * (LOC ** (4/3))
 
 # 5.Goldilock’s Conjecture Polynomial Regression
 def goldilocks_defect_prediction(a, b, c, LOC):
@@ -101,8 +101,8 @@ if all or choice == 5:
 if all:
     print("================================================================================")
     print(bcolors.GOLD ,"\nResults:", bcolors.ENDC)
-    linear = (result1 + result2) / 2
-    quadratic = (result3 + result4 + result5) / 3
-    print(bcolors.OKBLUE ,f"\nLinear Prediction: {linear}")
-    print(f"Quadratic Prediction: {quadratic}", bcolors.ENDC)
-    print(bcolors.OKGREEN ,"\nThe difference between the two predictions is:", abs(linear - quadratic), bcolors.ENDC)
+    print(bcolors.OKGREEN ,f"\nDefect Prediction based on LOC: {result1}", bcolors.ENDC)
+    print(bcolors.OKGREEN ,f"\nHalstead's Defect Model: {result2}", bcolors.ENDC)
+    print(bcolors.OKGREEN ,f"\nLipow’s Defect Model: {result3}", bcolors.ENDC)
+    print(bcolors.OKGREEN ,f"\nGaffney's Model for Optimal Module Size: {result4}", bcolors.ENDC)
+    print(bcolors.OKGREEN ,f"\nGoldilock’s Conjecture Polynomial Regression: {result5}", bcolors.ENDC)

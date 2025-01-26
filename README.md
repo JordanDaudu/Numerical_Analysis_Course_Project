@@ -21,6 +21,7 @@ The project demonstrates formulas that are implemented for software defect predi
 - Cubic spline interpolation
 - Finding roots of equations
 - Jacobi and Gauss-Seidel iterative methods
+- Gaussian elimination method
 - Lagrange and Neville interpolation
 - Linear and polynomial interpolation
 
@@ -34,10 +35,12 @@ Numerical_Analysis_Course_Project/
 │-- jacobi_and_gauss_seidel_iterative_methods.py
 │-- lagrange_and_neville_interpolation.py
 │-- linear_and_polynomial_interpolation.py
+│-- gaussian_elimination.py
 │-- main.py
 │-- .gitignore
 │-- LICENSE
 │-- README.md
+
 ```
 
 ## Formulas Used

@@ -1,12 +1,6 @@
-import math
 import numpy as np
-import matplotlib.pyplot as plt
-
-import sympy as sp
-
 from colors import bcolors
-from sympy.utilities.lambdify import lambdify
-x = sp.symbols('x')
+
 def simpsons_rule(f, a, b, n):
     """
     Simpson's Rule for Numerical Integration
@@ -40,12 +34,12 @@ def simpsons_rule(f, a, b, n):
 
 
 if __name__ == '__main__':
-    f = lambda x: math.e ** (x ** 2)
-    n = 10
+    f = lambda x: (np.sin(2*x**3 + 5*x**2 - 6)) / (2*np.exp(-2*x))
+    n = 16
     a=0
     b=1
 
-    print( f" Division into n={n} sections ")
-    integral = simpsons_rule(f, 0, 1, n)
-    print(bcolors.OKBLUE, f"Numerical Integration of definite integral in range [{a},{b}] is {integral}", bcolors.ENDC)
+    print(bcolors.GOLD ,f"\nDivision into n = {n} sections ", bcolors.ENDC)
+    integral = simpsons_rule(f, a, b, n)
+    print(bcolors.OKBLUE, f"\nNumerical Integration of definite integral in range [{a},{b}] is {integral}", bcolors.ENDC)
 

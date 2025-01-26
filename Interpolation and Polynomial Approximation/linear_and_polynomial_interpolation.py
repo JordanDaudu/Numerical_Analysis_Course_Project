@@ -326,9 +326,9 @@ def polynomialInterpolation(xList, yList, x):
 
 
 #main
-xList = [0, 1, 2, 3, 4, 5, 6]  # Known x-values
-yList = [0, 0.8415, 0.9093, 0.1411, -0.7568, -0.9589, -0.2794]  # Corresponding y-values
-x = 2.5 # Point to interpolate
+xList = [2, 2.25, 2.3, 2.7]
+yList = [0, 0.112463, 0.167996, 0.222709]
+x = 2.4
 print(bcolors.OKBLUE, "==================== Linear / Polynomial Interpolation Methods ====================\n", bcolors.ENDC)
 while True:
     print("Please choose the method you want to use:")

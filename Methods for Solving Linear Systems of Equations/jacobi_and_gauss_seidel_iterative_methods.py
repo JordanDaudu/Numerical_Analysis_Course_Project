@@ -1,4 +1,6 @@
 # Jacobi and Gauss-Seidel Iterative Methods
+from colors import bcolors
+
 
 class ConvergenceError(Exception):
     """Exception for handling non-convergence in iterative methods."""
@@ -207,7 +209,7 @@ if __name__ == "__main__":
             solution = jacobi_iterative(matrixA, vectorB, verbose=True)
         else:
             solution = gauss_seidel(matrixA, vectorB, verbose=True)
-        print("\nApproximate solution:", solution)
+        print(bcolors.OKGREEN ,"\nApproximate solution:", solution, bcolors.ENDC)
     except ConvergenceError as message:
-        print("\nError:", message)
+        print(bcolors.FAIL ,"\nError:", message, bcolors.ENDC)
         exit(0)

@@ -243,9 +243,9 @@ def cubic_spline(xList, yList, x, f_tag0, f_tagN):
 
 
 #main
-x_list = [0, PI/6, PI/4, PI/2]  # Known x-values
-y_list = [0, 0.5, 0.7072, 1]  # Corresponding y-values
-x = PI/3                   # The x-value to interpolate
+x_list = [2, 2.25, 2.3, 2.7]  # Known x-values
+y_list = [0, 0.112463, 0.167996, 0.222709]  # Corresponding y-values
+x = 2.4                   # The x-value to interpolate
 f_tag0 = 1                # First derivative at the start
 f_tagN = 0              # First derivative at the end
 

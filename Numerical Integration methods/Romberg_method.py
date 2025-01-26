@@ -1,4 +1,5 @@
 import numpy as np
+import sympy
 from colors import bcolors
 
 
@@ -35,17 +36,18 @@ def romberg_integration(func, a, b, n):
     return R[n - 1, n - 1]
 
 
-def f(x):
-    return 1/(2+x ** 4)
+#def f(x):
+ #   return (x*numpy.exp(-x) + numpy.log(x**2)) * (2*x**3 + 2*x**2 - 3*x - 5)
 
 
 if __name__ == '__main__':
 
     a = 0
     b = 1
-    n = 5
+    n = 16
+    f = lambda x: (sympy.sin(2*x**3 + 5*x**2 - 6)) / (2*sympy.exp(-2*x))
     integral = romberg_integration(f, a, b, n)
 
-    print( f" Division into n={n} sections ")
-    print(bcolors.OKBLUE, f"Approximate integral in range [{a},{b}] is {integral}", bcolors.ENDC)
+    print(bcolors.GOLD ,f"\nDivision into n={n} sections ", bcolors.ENDC)
+    print(bcolors.OKBLUE, f"\nApproximate integral in range [{a},{b}] is {integral}", bcolors.ENDC)
 

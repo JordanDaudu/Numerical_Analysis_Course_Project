@@ -1,5 +1,4 @@
 import math
-
 from colors import bcolors
 
 
